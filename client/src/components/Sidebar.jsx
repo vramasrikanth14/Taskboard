@@ -12,7 +12,7 @@ import {
   FileChartColumn,
   Clock
 } from "lucide-react";
-import task from "../assets/task.png";
+
 
 const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -49,7 +49,7 @@ const Sidebar = () => {
         <div className="flex items-center">
           {!collapsed && (
             <>
-              <img src={task} alt="Logo" className="w-10 h-10 mr-3" />
+              {/* <img src={task} alt="Logo" className="w-10 h-10 mr-3" /> */}
               <h2 className="text-lg font-bold">TaskBoard</h2>
             </>
           )}
