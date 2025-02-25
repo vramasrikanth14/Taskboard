@@ -1,0 +1,61 @@
+.react-kanban-card {
+  box-sizing: border-box;
+  max-width: 240px;
+  min-width: 300px;
+  margin: 1px auto;
+  margin-top: 8px;
+  background-color: #f7f6f6;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.react-kanban-column {
+  width: auto;
+  padding: 1px;
+  border-radius: 8px;
+  background-color: #f1efef;
+  margin: 9px;
+  margin-bottom: 60px;
+  max-height: 530px;
+  overflow-y: auto;
+}
+
+.react-kanban-card__title {
+  border-bottom: 70px #eee;
+  padding-bottom: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.react-kanban-column::-webkit-scrollbar {
+  width: 10px;
+}
+
+.react-kanban-column::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.react-kanban-column::-webkit-scrollbar-thumb {
+  background: #dcdbdb;
+  border-radius: 2px;
+}
+
+.react-kanban-column::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.react-kanban-board {
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  display: flex; /* Flexbox layout */
+  align-items: flex-start; /* Align items at the start */
+
+  /* Hide the scrollbar */
+  scrollbar-width: none; /* Firefox */
+}
+
+.react-kanban-board::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
+}

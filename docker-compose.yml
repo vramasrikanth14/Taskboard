@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./server
+    container_name: taskboard_backend
+    ports:
+      - 6090:5000
+
+  frontend:
+    build:
+      context: ./client
+    container_name: taskboard_frontend
+    ports:
+      - 6091:3000
